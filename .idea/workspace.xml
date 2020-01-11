@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d46cbbc3-306c-4957-841d-bc468bc40441" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go Application" />
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="D:\Go" />
+  <component name="ProjectId" id="1VWCrKbnE4VJgiHpH47EXUrhq1Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\qiyou\Desktop\GScan\Plugins" />
+      <recent name="C:\Users\qiyou\Desktop\GScan" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="GScan" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <directory value="$PROJECT_DIR$/" />
+      <output_directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ini" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="111" key="#GOROOT" timestamp="1577359702991">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="361" y="111" key="#GOROOT/0.40.1536.824@0.40.1536.824" timestamp="1577359702991" />
+    <state x="361" y="111" key="#Notifications" timestamp="1577374845507">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="361" y="111" key="#Notifications/0.40.1536.824@0.40.1536.824" timestamp="1577374845507" />
+    <state x="223" y="107" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577533908219">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="223" y="107" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1536.824@0.40.1536.824" timestamp="1577533908219" />
+    <state x="514" y="255" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578125313461">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="514" y="255" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1536.824@0.40.1536.824" timestamp="1578125313461" />
+    <state x="549" y="207" key="FileChooserDialogImpl" timestamp="1577370481066">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="549" y="207" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1577370481066" />
+    <state x="270" y="94" key="SettingsEditor" timestamp="1577604707661">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="270" y="94" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1577604707661" />
+    <state x="0" y="40" width="782" height="824" key="find.popup" timestamp="1578710000120">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="0" y="40" width="782" height="824" key="find.popup/0.40.1536.824@0.40.1536.824" timestamp="1578710000120" />
+    <state x="410" y="179" width="700" height="530" key="recent.locations.popup" timestamp="1578126344368">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="410" y="179" width="700" height="530" key="recent.locations.popup/0.40.1536.824@0.40.1536.824" timestamp="1578126344368" />
+    <state x="431" y="185" width="672" height="160" key="search.everywhere.popup" timestamp="1577976982420">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="431" y="185" width="672" height="160" key="search.everywhere.popup/0.40.1536.824@0.40.1536.824" timestamp="1577976982420" />
+  </component>
+</project>
