@@ -1,9 +1,9 @@
-# Gscan
+# :syringe:Gscan
 > Gscan is a high concurrency scanner based on golang
 
-## Usage
+## :closed_book:Usage
 
-Download links: [Download](https://github.com/hack2fun/Gscan/releases)
+:arrow_down:Download links: [Download](https://github.com/hack2fun/Gscan/releases)
 
 Gscan use `--help` to show the usage
 ```sh
@@ -53,7 +53,7 @@ Usage:
 
 PS: `subdomain`,`urlscan`,`auth`module please use the parameter `--url` to specify the target instead of `--host`, `subdomain` and `urlscan` use `-uf` to specify the dictionary file but `auth` use `-P`.
 
-## Test
+## :pushpin:Test
 Let's test the speed of each module
 PS: My CPU host performance is not very good, so the speed may be slower
 you can use `--show` to show  all scantype:`Gscan --show`
@@ -412,7 +412,7 @@ Test:
 
 ![](./img/sub_test.png)
 
-## End
+## :speech_balloon:End
 PS: If a false positive occurs during the test, you can increase the timeout or lower the thread,it depends on the target host
 
 If you have any good suggestions or find any bugs, welcome to issue,thanks
