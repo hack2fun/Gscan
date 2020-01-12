@@ -10,22 +10,22 @@ import (
 	//"os"
 )
 
-func Ftp(info Misc.HostInfo,ch chan int,wg *sync.WaitGroup){
+func Ftp(info Misc.HostInfo, ch chan int, wg *sync.WaitGroup) {
 	var err error
-	addr := fmt.Sprintf("%s:%d",info.Host,info.Port)
+	addr := fmt.Sprintf("%s:%d", info.Host, info.Port)
 	client, err := ftp.Dial(addr, ftp.DialWithTimeout(time.Duration(info.Timeout)*time.Second))
-	if err!=nil && info.ErrShow{
+	if err != nil && info.ErrShow {
 		Misc.ErrPrinter.Println(err.Error())
-	}else if err==nil{
+	} else if err == nil {
 		err = client.Login(info.Username, info.Password)
-		if  err != nil && info.ErrShow{
+		if err != nil && info.ErrShow {
 			info.PrintFail()
-		}else if err == nil{
+		} else if err == nil {
 			client.Quit()
 			client.Logout()
-			success+=1
+			success += 1
 			info.PrintSuccess()
-			if info.Output!=""{
+			if info.Output != "" {
 				info.OutputTXT()
 			}
 		}
@@ -34,43 +34,43 @@ func Ftp(info Misc.HostInfo,ch chan int,wg *sync.WaitGroup){
 	<-ch
 }
 
-func FtpConn(info *Misc.HostInfo,ch chan int){
-	var hosts,usernames,passwords []string
+func FtpConn(info *Misc.HostInfo, ch chan int) {
+	var hosts, usernames, passwords []string
 	var err error
 	var wg = sync.WaitGroup{}
-	stime:=time.Now()
-	if info.Ports == ""{
-		info.Port=FTPPORT
-	}else{
-		p,_:=Parse.ParsePort(info.Ports)
+	stime := time.Now()
+	if info.Ports == "" {
+		info.Port = FTPPORT
+	} else {
+		p, _ := Parse.ParsePort(info.Ports)
 		info.Port = p[0]
 	}
 
-	hosts,err= Parse.ParseIP(info.Host)
+	hosts, err = Parse.ParseIP(info.Host)
 	Misc.CheckErr(err)
 
-	usernames,err= Parse.ParseUser(info)
+	usernames, err = Parse.ParseUser(info)
 	Misc.CheckErr(err)
 
-	passwords,err= Parse.ParsePass(info)
+	passwords, err = Parse.ParsePass(info)
 	Misc.CheckErr(err)
 
-	wg.Add(len(hosts)*len(usernames)*len(passwords))
-	Misc.InfoPrinter.Println("Total length",len(hosts)*len(usernames)*len(passwords))
-	for _,host:=range hosts{
-		for _,user:=range usernames{
-			for _,pass:=range passwords{
+	wg.Add(len(hosts) * len(usernames) * len(passwords))
+	Misc.InfoPrinter.Println("Total length", len(hosts)*len(usernames)*len(passwords))
+	for _, host := range hosts {
+		for _, user := range usernames {
+			for _, pass := range passwords {
 				info.Host = host
 				info.Username = user
 				info.Password = pass
-				go Ftp(*info,ch,&wg)
+				go Ftp(*info, ch, &wg)
 				ch <- 1
 			}
 		}
 	}
 	wg.Wait()
-	end:=time.Since(stime)
+	end := time.Since(stime)
 	Misc.InfoPrinter.Println("All Done")
-	Misc.InfoPrinter.Println("Number of successes:",success)
-	Misc.InfoPrinter.Println("Time consumed:",end)
+	Misc.InfoPrinter.Println("Number of successes:", success)
+	Misc.InfoPrinter.Println("Time consumed:", end)
 }
